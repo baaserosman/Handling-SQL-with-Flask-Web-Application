@@ -94,4 +94,30 @@ At the end of the this hands-on training, students will be able to;
 
 - Run application with Python
 
+`sudo yum update -y`
 
+`sudo yum install python3 -y`
+
+`sudo yum install python-pip`
+
+`sudo pip3 install flask`
+
+`sudo pip3 install flask-mysql`
+
+`sudo pip3 install sqlalchemy`
+
+`sudo pip3 install Flask-SQLAlchemy`
+
+`sudo yum install git -y`
+
+`sudo git clone https://github.com/baaserosman/Handling-SQL-with-Flask-Web-Application.git`
+
+`cd Handling-SQL-with-Flask-Web-Application/`
+
+`cd instance`
+
+`sudo rm -r email.db`
+
+`sudo python3 app-with-sqlite.py`
+
+`sudo python3 app-with-mysql.py`
