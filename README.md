@@ -36,10 +36,10 @@ At the end of the this hands-on training, students will be able to;
 
 ## Part 1 - Write a Sample Web Application with SQLite and database implementation on GitHub Repo
 
-
+```bash
 `pip install Flask-MySQL`
 `pip install Flask-SQLAlchemy`
-
+```
 - Write an application with database implementation using `SQLite` and save the complete code as `app-with-sqlite.py` under `hands-on/flask-05-handling-sql-on-ec2-linux2` folder.
 
 - configure required environmental variables for SQLite
@@ -84,40 +84,50 @@ At the end of the this hands-on training, students will be able to;
 
 - Update the installed packages and package cache on your instance.
 
+```bash
+sudo yum update -y
+```
+
 - Install `Python 3` packages.
+
+```bash
+sudo yum install python3 -y
+```
 
 - Check the python3 version
 
 - Install `Python 3 Flask` framework.
 
+```bash
+sudo yum install python-pip
+
+sudo pip3 install flask
+```
+
 - Install `flask_mysql`.
+
+```bash
+sudo pip3 install flask-mysql
+
+sudo pip3 install sqlalchemy
+
+sudo pip3 install Flask-SQLAlchemy
+
+sudo yum install git -y
+
+sudo git clone https://github.com/baaserosman/Handling-SQL-with-Flask-Web-Application.git
+
+cd Handling-SQL-with-Flask-Web-Application/
+```
 
 - Run application with Python
 
-`sudo yum update -y`
+```bash
+cd instance
 
-`sudo yum install python3 -y`
+sudo rm -r email.db
 
-`sudo yum install python-pip`
+sudo python3 app-with-sqlite.py
 
-`sudo pip3 install flask`
-
-`sudo pip3 install flask-mysql`
-
-`sudo pip3 install sqlalchemy`
-
-`sudo pip3 install Flask-SQLAlchemy`
-
-`sudo yum install git -y`
-
-`sudo git clone https://github.com/baaserosman/Handling-SQL-with-Flask-Web-Application.git`
-
-`cd Handling-SQL-with-Flask-Web-Application/`
-
-`cd instance`
-
-`sudo rm -r email.db`
-
-`sudo python3 app-with-sqlite.py`
-
-`sudo python3 app-with-mysql.py`
+sudo python3 app-with-mysql.py
+```
